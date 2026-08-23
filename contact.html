@@ -1,1 +1,562 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Lyton Mupanga | Work With Me</title><meta name="description" content="Contact Lyton Mupanga for speaking, creative projects, strategy, media collaborations, tutoring and partnerships."><link rel="canonical" href="https://lytonmupanga.netlify.app/contact.html"><link rel="stylesheet" href="assets/style.css"></head><body><header class="site-header"><a class="brand" href="index.html"><span>LM</span><strong>LYTON MUPANGA</strong></a><button class="menu-toggle">☰</button><nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="ventures.html">Ventures</a><a href="media.html">Media</a><a href="journal.html">Journal</a><a class="active nav-cta" href="contact.html">Work With Me</a></nav></header><main><section class="section-pad"><p class="eyebrow">CONTACT</p><h1 style="font-family:'Playfair Display',serif;font-size:clamp(54px,8vw,100px);line-height:1.02">Let's make the next <em style="color:var(--gold2)">move.</em></h1><p style="max-width:700px;color:var(--muted);font-size:18px">For collaborations, speaking, creative production, strategy, media, education or partnerships, send a message.</p></section><section class="section-pad" style="padding-top:20px"><div class="journal-feature"><div><p class="eyebrow">WHAT CAN WE WORK ON?</p><div class="venture-grid" style="grid-template-columns:1fr"><div class="venture-card"><h3>Creative & Media</h3><p>Content, visual projects, YouTube strategy and creative direction.</p></div><div class="venture-card"><h3>Speaking & Education</h3><p>Speaking, tutoring, workshops and educational projects.</p></div><div class="venture-card"><h3>Business & Partnerships</h3><p>Brand collaborations, ventures, strategy and new opportunities.</p></div></div></div><form name="contact" method="POST" data-netlify="true" action="/success.html" style="background:#151518;border:1px solid var(--line);padding:35px"><input type="hidden" name="form-name" value="contact"><label>Name<input required name="name" type="text" placeholder="Your name"></label><label>Email<input required name="email" type="email" placeholder="you@example.com"></label><label>What are you contacting me about?<select name="topic"><option>Collaboration</option><option>Speaking</option><option>Creative / Media</option><option>Strategy</option><option>Education / Tutoring</option><option>Other</option></select></label><label>Message<textarea required name="message" rows="7" placeholder="Tell me about the opportunity..."></textarea></label><button class="btn btn-gold" type="submit">Send enquiry</button></form></div></section></main><footer class="footer"><div><strong>LYTON MUPANGA</strong><p>Ideas. Execution. Impact.</p></div><div class="footer-bottom"><span>© <span id="year"></span> Lyton Mupanga.</span></div></footer><style>label{display:block;font-size:12px;color:#aaa;margin-bottom:18px}input,select,textarea{display:block;width:100%;margin-top:7px;background:#0b0b0d;border:1px solid var(--line);color:white;padding:13px;border-radius:8px;font:inherit}textarea{resize:vertical}button{border:0;cursor:pointer}</style><script src="assets/script.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Work With Lyton Mupanga | Enquiries & Collaborations</title>
+
+    <meta name="description"
+        content="Work with Lyton Mupanga on creative projects, media, speaking, education, strategy, partnerships and collaborations.">
+
+    <meta name="author" content="Lyton Mupanga">
+
+    <link rel="canonical" href="https://lytonmupanga.netlify.app/contact.html">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <style>
+        .contact-page {
+            padding: 100px 7%;
+        }
+
+        .contact-intro {
+            max-width: 900px;
+            margin-bottom: 70px;
+        }
+
+        .contact-intro h1 {
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: clamp(52px, 8vw, 105px);
+            line-height: 1.02;
+            margin: 15px 0 30px;
+        }
+
+        .contact-intro h1 em {
+            color: var(--gold2);
+            font-style: normal;
+        }
+
+        .contact-intro p {
+            max-width: 720px;
+            color: var(--muted);
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.85fr 1.15fr;
+            gap: 50px;
+            align-items: start;
+        }
+
+        .contact-info {
+            display: grid;
+            gap: 18px;
+        }
+
+        .contact-card {
+            background: #111114;
+            border: 1px solid var(--line);
+            padding: 28px;
+            border-radius: 14px;
+            transition: transform .25s ease, border-color .25s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(218, 181, 94, .55);
+        }
+
+        .contact-card span {
+            display: block;
+            color: var(--gold2);
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .contact-card h3 {
+            margin: 0 0 8px;
+            font-size: 21px;
+        }
+
+        .contact-card p {
+            margin: 0;
+            color: var(--muted);
+            line-height: 1.7;
+        }
+
+        .contact-form {
+            background: #111114;
+            border: 1px solid var(--line);
+            padding: 42px;
+            border-radius: 16px;
+        }
+
+        .contact-form h2 {
+            font-family: "Playfair Display", Georgia, serif;
+            font-size: 38px;
+            margin: 0 0 10px;
+        }
+
+        .contact-form > p {
+            color: var(--muted);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #d8d8d8;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            box-sizing: border-box;
+            background: #09090b;
+            color: #fff;
+            border: 1px solid var(--line);
+            padding: 15px 16px;
+            border-radius: 8px;
+            font: inherit;
+            outline: none;
+            transition: border-color .2s ease, box-shadow .2s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            border-color: var(--gold2);
+            box-shadow: 0 0 0 3px rgba(218, 181, 94, .08);
+        }
+
+        .form-group textarea {
+            min-height: 170px;
+            resize: vertical;
+        }
+
+        .form-submit {
+            width: 100%;
+            padding: 16px 22px;
+            border: 1px solid var(--gold2);
+            border-radius: 8px;
+            background: var(--gold2);
+            color: #080808;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform .2s ease, opacity .2s ease;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            opacity: .92;
+        }
+
+        .form-note {
+            color: #777;
+            font-size: 12px;
+            line-height: 1.6;
+            margin-top: 16px;
+        }
+
+        @media (max-width: 900px) {
+            .contact-page {
+                padding: 75px 6%;
+            }
+
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 28px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .contact-page {
+                padding: 55px 5%;
+            }
+
+            .contact-intro h1 {
+                font-size: clamp(48px, 15vw, 75px);
+            }
+
+            .contact-intro p {
+                font-size: 16px;
+            }
+
+            .contact-form h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <a class="brand" href="index.html">
+            <span>LM</span>
+            <strong>LYTON MUPANGA</strong>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open navigation">
+            ☰
+        </button>
+
+        <nav class="nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="ventures.html">Ventures</a>
+            <a href="media.html">Media</a>
+            <a href="journal.html">Journal</a>
+            <a class="active nav-cta" href="contact.html">
+                Work With Me
+            </a>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+    <main>
+
+        <section class="contact-page">
+
+            <!-- INTRO -->
+            <div class="contact-intro">
+
+                <p class="eyebrow">
+                    WORK WITH LYTON
+                </p>
+
+                <h1>
+                    Let's make the next
+                    <em>move.</em>
+                </h1>
+
+                <p>
+                    Whether you have an idea, an opportunity, a collaboration
+                    or a project that needs the right creative and strategic
+                    direction, I'd love to hear from you.
+                </p>
+
+            </div>
+
+
+            <!-- CONTACT AREA -->
+            <div class="contact-layout">
+
+
+                <!-- LEFT SIDE -->
+                <div class="contact-info">
+
+                    <div class="contact-card">
+
+                        <span>01 — Creative & Media</span>
+
+                        <h3>
+                            Build something worth seeing.
+                        </h3>
+
+                        <p>
+                            Content creation, visual production, YouTube
+                            strategy, creative direction and media projects.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <span>02 — Speaking & Education</span>
+
+                        <h3>
+                            Share knowledge. Create impact.
+                        </h3>
+
+                        <p>
+                            Speaking engagements, tutoring, workshops,
+                            educational projects and knowledge-driven
+                            collaborations.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <span>03 — Strategy</span>
+
+                        <h3>
+                            Turn ideas into direction.
+                        </h3>
+
+                        <p>
+                            Strategic thinking, personal branding,
+                            content strategy, digital positioning and
+                            creative problem solving.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-card">
+
+                        <span>04 — Partnerships</span>
+
+                        <h3>
+                            Explore the opportunity.
+                        </h3>
+
+                        <p>
+                            Brand partnerships, business opportunities,
+                            ventures, collaborations and meaningful
+                            professional relationships.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- RIGHT SIDE / FORM -->
+                <div class="contact-form">
+
+                    <h2>
+                        Send an enquiry.
+                    </h2>
+
+                    <p>
+                        Tell me what you're working on, what you need
+                        and how we could potentially work together.
+                    </p>
+
+
+                    <!-- NETLIFY FORM -->
+
+                    <form
+                        name="contact"
+                        method="POST"
+                        data-netlify="true"
+                        data-netlify-honeypot="bot-field"
+                        action="/success.html"
+                    >
+
+                        <!-- REQUIRED NETLIFY FORM IDENTIFICATION -->
+                        <input
+                            type="hidden"
+                            name="form-name"
+                            value="contact"
+                        >
+
+
+                        <!-- HONEYPOT SPAM PROTECTION -->
+                        <p style="display:none;">
+                            <label>
+                                Don't fill this out if you're human:
+                                <input name="bot-field">
+                            </label>
+                        </p>
+
+
+                        <!-- NAME -->
+                        <div class="form-group">
+
+                            <label for="name">
+                                Your name *
+                            </label>
+
+                            <input
+                                id="name"
+                                name="name"
+                                type="text"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+                        <div class="form-group">
+
+                            <label for="email">
+                                Email address *
+                            </label>
+
+                            <input
+                                id="email"
+                                name="email"
+                                type="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- ORGANIZATION -->
+                        <div class="form-group">
+
+                            <label for="organization">
+                                Organization / Brand
+                            </label>
+
+                            <input
+                                id="organization"
+                                name="organization"
+                                type="text"
+                                placeholder="Company, organization or brand"
+                                autocomplete="organization"
+                            >
+
+                        </div>
+
+
+                        <!-- TOPIC -->
+                        <div class="form-group">
+
+                            <label for="topic">
+                                What would you like to discuss? *
+                            </label>
+
+                            <select
+                                id="topic"
+                                name="topic"
+                                required
+                            >
+
+                                <option value="">
+                                    Select an option
+                                </option>
+
+                                <option value="Creative & Media">
+                                    Creative & Media
+                                </option>
+
+                                <option value="Speaking">
+                                    Speaking
+                                </option>
+
+                                <option value="Education & Tutoring">
+                                    Education & Tutoring
+                                </option>
+
+                                <option value="Strategy">
+                                    Strategy
+                                </option>
+
+                                <option value="Brand Partnership">
+                                    Brand Partnership
+                                </option>
+
+                                <option value="Business Opportunity">
+                                    Business Opportunity
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- MESSAGE -->
+                        <div class="form-group">
+
+                            <label for="message">
+                                Tell me about it *
+                            </label>
+
+                            <textarea
+                                id="message"
+                                name="message"
+                                placeholder="Tell me about your project, opportunity or idea..."
+                                required
+                            ></textarea>
+
+                        </div>
+
+
+                        <!-- SUBMIT -->
+                        <button
+                            class="form-submit"
+                            type="submit"
+                        >
+                            Send enquiry →
+                        </button>
+
+
+                        <p class="form-note">
+                            Your information will only be used to respond
+                            to your enquiry.
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div>
+            <strong>LYTON MUPANGA</strong>
+
+            <p>
+                Ideas. Execution. Impact.
+            </p>
+        </div>
+
+        <div class="footer-bottom">
+
+            <span>
+                © <span id="year"></span>
+                Lyton Mupanga.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <script src="assets/script.js"></script>
+
+    <script>
+        const yearElement = document.getElementById("year");
+
+        if (yearElement) {
+            yearElement.textContent = new Date().getFullYear();
+        }
+    </script>
+
+</body>
+
+</html>
